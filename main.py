@@ -6,7 +6,7 @@ tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 dest = (HOST, PORT)
 tcp.connect(dest)
 print ('Conectei')
-msg = (b'{\"message\":\"OI, eu vim do python em docker\"}')
+msg = (b'{\"message\":\"OI, eu vim do python em docker via TCP\"}')
 tcp.send (msg)
 tcp.close()
 
