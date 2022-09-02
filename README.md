@@ -3,7 +3,7 @@
 docker build -t arturcorreiajunior/python-tcp:latest .
 ```
 ```console
-docker push misolucoestech/python-tcp:latest 
+docker push arturcorreiajunior/python-tcp:latest 
 ```
 ```console
 docker run arturcorreiajunior/python-tcp:latest
