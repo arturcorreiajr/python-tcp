@@ -1,12 +1,20 @@
 import socket
 
-HOST = '172.19.0.2'          # Endereco IP do Servidor
-PORT = 5170                  # Porta que o Servidor esta
+host = ""
+port = 0
+m    = ""
+
+host = str(input('      Informe o host: '))
+port = int(input('      Informe a porta: '))
+msg  = str(input('      Mensagem a ser enviada: '))
+print('OK, vou conectar com: ', host,":", port)
+
+HOST = host                  # Endereco IP do Servidor
+PORT = port                  # Porta que o Servidor esta
 tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 dest = (HOST, PORT)
 tcp.connect(dest)
 print ('Conectei')
-msg = (b'{\"message\":\"OI, eu vim do python em docker via TCP\"}')
-tcp.send (msg)
+tcp.send (msg.encode())
 tcp.close()
 

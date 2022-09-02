@@ -4,7 +4,7 @@ WORKDIR /python/src
 
 COPY ./main.py /python/src/main.py
 RUN apt update
-RUN apt install nano 
+RUN apt install nano
 
 EXPOSE 80
 
