@@ -3,4 +3,4 @@ docker push misolucoestech/python-tcp:latest
 
 docker run arturcorreiajunior/python-tcp:latest
 
-# {"message":"Eu sou uma mensagem."}
+Mensagem formato json: {"message":"Eu sou uma mensagem."}
